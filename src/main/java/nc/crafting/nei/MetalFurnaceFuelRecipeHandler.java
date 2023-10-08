@@ -66,7 +66,7 @@ public class MetalFurnaceFuelRecipeHandler extends MetalFurnaceRecipeHandler
                 arecipes.add(new CachedFuelRecipe(fuel));
     }
 
-    public List<String> handleItemTooltip(GuiRecipe gui, ItemStack stack, List<String> currenttip, int recipe) {
+    public List<String> handleItemTooltip(GuiRecipe<?> gui, ItemStack stack, List<String> currenttip, int recipe) {
         CachedFuelRecipe crecipe = (CachedFuelRecipe) arecipes.get(recipe);
         MetalFuelPair fuel = crecipe.metalfuel;
         float burnTime = (float) ((double) (fuel.burnTime*NuclearCraft.metalFurnaceCookSpeed)/8000);

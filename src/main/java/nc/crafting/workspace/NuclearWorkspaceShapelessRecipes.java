@@ -16,8 +16,6 @@ public class NuclearWorkspaceShapelessRecipes implements IRecipe
     /** Is a List of ItemStack that composes the recipe. */
     @SuppressWarnings("rawtypes")
 	public final List recipeItems;
-    @SuppressWarnings("unused")
-	private static final String __OBFID = "CL_00000094";
 
     @SuppressWarnings("rawtypes")
 	public NuclearWorkspaceShapelessRecipes(ItemStack p_i1918_1_, List p_i1918_2_)

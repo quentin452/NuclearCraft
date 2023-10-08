@@ -66,7 +66,7 @@ public class CrusherFuelRecipeHandler extends CrusherRecipeHandler
                 arecipes.add(new CachedFuelRecipe(crusherfuel));
     }
 
-    public List<String> handleItemTooltip(GuiRecipe gui, ItemStack stack, List<String> currenttip, int recipe) {
+    public List<String> handleItemTooltip(GuiRecipe<?> gui, ItemStack stack, List<String> currenttip, int recipe) {
         CachedFuelRecipe crecipe = (CachedFuelRecipe) arecipes.get(recipe);
         CrusherFuelPair fuel = crecipe.crushfuel;
         float burnTime = (float) ((double) (fuel.burnTime*NuclearCraft.crusherCrushSpeed)/16000);

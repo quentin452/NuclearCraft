@@ -67,7 +67,7 @@ public class NuclearFurnaceFuelRecipeHandler extends NuclearFurnaceRecipeHandler
                 arecipes.add(new CachednuclearfuelRecipe(nuclearfuel));
     }
 
-    public List<String> handleItemTooltip(GuiRecipe gui, ItemStack stack, List<String> currenttip, int recipe) {
+    public List<String> handleItemTooltip(GuiRecipe<?> gui, ItemStack stack, List<String> currenttip, int recipe) {
         CachednuclearfuelRecipe crecipe = (CachednuclearfuelRecipe) arecipes.get(recipe);
         nuclearfuelPair nuclearfuel = crecipe.nuclearfuel;
         float burnTime = (float) ((double) (nuclearfuel.burnTime*NuclearCraft.nuclearFurnaceCookSpeed)/300);
